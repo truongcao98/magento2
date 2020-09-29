@@ -20,7 +20,7 @@ class Data extends Action
 
     public function execute()
     {
-        echo "Lấy dữ liệu từ bảng Truongcl_table";
+        echo "Lấy dữ liệu từ bảng truongcl_table";
         $this->PostsFactory->create();
         $collection = $this->PostsFactory->create()
             ->addFieldToSelect(array('title','description','image','status','create_at','update_at'))

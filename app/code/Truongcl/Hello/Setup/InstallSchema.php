@@ -4,7 +4,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace Truong\Hello\Setup;
+namespace Truongcl\Hello\Setup;
 use Magento\Framework\Setup\InstallSchemaInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\SchemaSetupInterface;
@@ -21,10 +21,10 @@ class InstallSchema implements InstallSchemaInterface
     public function install(SchemaSetupInterface $setup, ModuleContextInterface $context)
     {
         /**
-         * Create table 'Truong_table'
+         * Create table 'Truongcl_table'
          */
         $table = $setup->getConnection()
-            ->newTable($setup->getTable('Truong_table'))
+            ->newTable($setup->getTable('truongcl_table'))
             ->addColumn(
                 'id',
                 \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
@@ -74,7 +74,7 @@ class InstallSchema implements InstallSchemaInterface
                 ['nullable' => false],
                 'Update At'
             )
-            ->setComment("Truong Module Table");
+            ->setComment("Truongcl Module Table");
         $setup->getConnection()->createTable($table);
     }
 }

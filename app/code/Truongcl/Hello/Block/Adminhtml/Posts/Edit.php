@@ -68,7 +68,7 @@ class Edit extends Container
      */
     public function getHeaderText()
     {
-        $posts = $this->_coreRegistry->registry('Truongcl_blog');
+        $posts = $this->_coreRegistry->registry('truongcl_blog');
         if ($posts->getId()) {
             $postsTitle = $this->escapeHtml($posts->getTitle());
             return __("Edit News '%1'", $postsTitle);

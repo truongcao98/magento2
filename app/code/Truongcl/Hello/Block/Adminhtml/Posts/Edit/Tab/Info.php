@@ -49,7 +49,7 @@ class Info extends Generic implements TabInterface
     protected function _prepareForm()
     {
         /** @var $model \Truongcl\Hello\Model\PostsFactory */
-        $model = $this->_coreRegistry->registry('Truongcl_blog');
+        $model = $this->_coreRegistry->registry('truongcl_blog');
 
         /** @var \Truongcl\Framework\Data\Form $form */
         $form = $this->_formFactory->create();

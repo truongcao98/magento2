@@ -28,14 +28,15 @@ class InstallData implements InstallDataInterface
          * Install messages
          */
         $data = [
-            ['title' => 'title_1','description' => 'description_1','image' => '1.jpeg','status' => 1 ],
-            ['title' => 'title_2','description' => 'description_2','image' => '1.jpeg','status' => 1 ],
-            ['title' => 'title_3','description' => 'description_3','image' => '1.jpeg','status' => 1 ],
-            ['title' => 'title_4','description' => 'description_4','image' => '1.jpeg','status' => 1 ],
+            ['title' => 'title_1','description' => 'description_1','image' => '1.jpg','status' => 1 ],
+            ['title' => 'title_2','description' => 'description_2','image' => '1.jpg','status' => 1 ],
+            ['title' => 'title_3','description' => 'description_3','image' => '1.jpg','status' => 1 ],
+            ['title' => 'title_4','description' => 'description_4','image' => '1.jpg','status' => 1 ],
+            
         ];
         foreach ($data as $bind) {
             $setup->getConnection()
-                ->insertForce($setup->getTable('Truongcl_table'), $bind);
+                ->insertForce($setup->getTable('truongcl_table'), $bind);
         }
     }
 }

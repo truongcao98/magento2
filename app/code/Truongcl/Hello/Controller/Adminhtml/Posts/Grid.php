@@ -10,4 +10,3 @@ class Grid extends Posts
         return $this->_resultPageFactory->create();
     }
 }
-
