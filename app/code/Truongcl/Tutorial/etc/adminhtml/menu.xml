@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * menu
+ *
+ * @copyright Copyright © 2020 Magetop. All rights reserved.
+ * @author    info@magetop.com
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Truongcl_Tutorial::helloworld_menu" title="Truongcl Tutorial" module="Truongcl_Tutorial" sortOrder="20" resource="Truongcl_Tutorial::helloworld" />
+        <add id="Truongcl_Tutorial::posts_menu" title="FAQ" module="Truongcl_Tutorial" sortOrder="1" parent="Truongcl_Tutorial::helloworld_menu" action="helloworld/posts/index" resource="Truongcl_Tutorial::posts" />
+    </menu>
+</config>
