@@ -28,10 +28,10 @@ class InstallData implements InstallDataInterface
          * Install messages
          */
         $data = [
-            ['title' => 'IU','description' => 'Lee Ji-eun, thường được biết đến với nghệ danh IU, là một nữ ca sĩ, nhạc sĩ và diễn viên người Hàn QuốC','image' => '1.jpeg','status' => 1 ],
-            ['title' => 'Miyeon','description' => 'Cho Mi-yeon, thường được biết đến với nghệ danh Miyeon, là một nữ ca sĩ thần tượng người Hàn Quố','image' => 'miyeon.jpg','status' => 1 ],
-            ['title' => 'Irene','description' => 'Bae Ju-hyun, hay còn gọi là Bae Joo-hyeon, thường được biết đến với nghệ danh Irene, là một nữ ca sĩ và diễn viên người Hàn Quốc.','image' => 'irene.jpg','status' => 1 ],
-            ['title' => 'Jisoo','description' => 'Kim Ji-soo, là một nữ ca sĩ thần tượng, diễn viên, người mẫu, MC người Hàn Quốc','image' => 'jisoo.jpg','status' => 1 ],
+            ['title' => 'title_1','description' => 'description_1','image' => '1.jpeg','status' => 1 ],
+            ['title' => 'title_2','description' => 'description_2' => 'miyeon.jpg','status' => 1 ],
+            ['title' => 'title_3','description' => 'description_3','image' => 'irene.jpg','status' => 1 ],
+            ['title' => 'title_4','description' => 'description_4','image' => 'jisoo.jpg','status' => 1 ],
         ];
         foreach ($data as $bind) {
             $setup->getConnection()
